@@ -6,7 +6,7 @@ function signInPage() {
   return (
     <div className='signInPage'>
         {/* copied from clerk website */}
-        <SignIn path="/sign-in" signUpUrl='sign-up' />
+        <SignIn path="/sign-in" signUpUrl='sign-up' forceRedirectUrl={"/dashboard"} />
     </div>
   )
 }

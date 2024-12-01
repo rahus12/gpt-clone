@@ -2,6 +2,7 @@ import './DashboardLayout.css'
 import { Link, Outlet,useNavigate } from 'react-router-dom'
 import { useAuth } from '@clerk/clerk-react'
 import { useEffect, useState } from 'react'
+import ChatList from '../../components/ChatList'
 
 function DashboardLayout() {
 
@@ -25,7 +26,7 @@ function DashboardLayout() {
   return (
     <div className="dashboardLayout">
         <div className="menu">
-            Menu
+            <ChatList/>
         </div>
         <div className="content">
             <Outlet/>
