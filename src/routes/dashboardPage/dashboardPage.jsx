@@ -1,5 +1,6 @@
 import React from 'react'
 import './dashboardPage.css'
+import NewPrompt from '../../components/newPrompt/newPrompt'
 
 
 function DashboardPage() {
@@ -28,12 +29,15 @@ function DashboardPage() {
 
         </div>
       </div>
-      <div className="formContainer">
-        <form action="">
+      <NewPrompt/>
+      
+      {/* dont know why the vide0 had used a seperate formcontainer instead of using the component built */}
+      {/* <div className="formContainer">
+        <form>
           <input type="text" placeholder='Ask me anything...' />
           <button>Send</button>
         </form>
-      </div>
+      </div> */}
     </div>
   )
 }
