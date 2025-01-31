@@ -9,20 +9,21 @@ function Homepage() {
         <h1>LAMA AI</h1>
         <h2>Super charge your creativity and productivity</h2>
         <h3>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo, cupiditate ullam? Molestiae delectus possimus animi.</h3>
-        <Link>Get Started</Link>
+        <Link to="/dashboard">Get Started</Link>
       </div>
       <div className="right">
         <div className="chat">
+          {/* buikt in tool for animation */}
           <TypeAnimation
             sequence={[
               // Same substring at the start will only be typed out once, initially
-              'We produce food for Mice',
+              'Tell me a joke',
               1000, // wait 1s before replacing "Mice" with "Hamsters"
-              'We produce food for Hamsters',
+              'Explain gravity like I am 5',,
               1000,
-              'We produce food for Guinea Pigs',
+              'Write me a poem',
               1000,
-              'We produce food for Chinchillas',
+              'Help me with my homework',
               1000
             ]}
             wrapper="span"
